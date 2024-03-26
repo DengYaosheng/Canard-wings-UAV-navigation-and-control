@@ -2,7 +2,7 @@ close all;
 clear;
 
 addpath('utils');
-
+load('..\waibao\aeroData.mat'); %改成你自己的路径
 %% 飞行参数
 % trajhandle = @traj_line;
 % trajhandle = @traj_helix;
@@ -14,7 +14,7 @@ addpath('utils');
               1    1   1;
               2    0   2;
               3    -1  1;
-              1    0   0;
+              2    0   0;
               ]';
  trajhandle([],[],waypoints);
 
@@ -57,4 +57,4 @@ plot(tt,state(:,13))
 xlabel('t')
 ylabel('d偏航')
 grid on
-run main.m
+run fullPlant.slx

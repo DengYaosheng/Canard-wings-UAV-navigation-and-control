@@ -1,5 +1,5 @@
 %UAV Simulation
-clc; close all; clear all;
+
 %constants
 DTOR = pi/180; RTOD = 180/pi; 
 L_F = 0.75; L_NO = 0.65; L_A = 0.90;
